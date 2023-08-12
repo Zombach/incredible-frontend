@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1000, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="My CV" />
+  <title>My CV</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./planet.css">
+  <link rel="stylesheet" href="./buble.css">
+  <link rel="stylesheet" href="./email.css">
+  <link rel="stylesheet" href="./phone.css">
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <script id="content" type="text/babel">
+      //Contact
+      const phone = {
+        name: "",
+        icon: Phone,
+        link: "tel:+79062700025",
+        text: "+79062700025"
+      };
+      const email = {
+        name: "",
+        icon: Email,
+        link: "mailto:Kozlov.s.v.1992@gmail.com",
+        text: "Kozlov.s.v.1992@gmail.com"
+      };
+      const address = {
+        name: "",
+        icon: Planet,
+        link: "https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_savushkina_128k1b/Z0kYdAdgTUQAQFtjfXV5eXpmbA==/?ll=30.200417%2C59.988658&z=16.2",
+        text: "Санкт-Петербург, Савушкина 128"
+      };
+
+      //Language
+      const russian = { name: "Russian", count: 4 };
+      const english = { name: "English", count: 2 };
+
+      //Infos
+      const Skills = {
+        title: "Skills",
+        source: [
+          "OS: Windows and Linux",
+          "Languages: C, C++, C#, Visual Basic 6, Visual Basic, .NET, SOAP, HTML, DHTML, XML",
+          "Software: Visual Studio, .NET 2005, Dreamweaver",
+          "Database: MySQL 4.0/5, MS SQL 2000/2005, MS Access",
+          "Networking: TCP/IP, LAN, FTP, DNS, DHCP, IIS, Active Directory",
+          "Very energetic and ready to take new challenges",
+          "Excellent communication and presentation skills",
+        ]
+      }
+      const Experience = {
+        title: "Experience",
+        source: [
+          "C# Programmer",
+          "Broad-ridge Technologies, Louisville, KY",
+          "October 2017 – Present",
+          "Providing support to IT personnel in designing, developing, analyzing, testing, debugging, and executing C# programs for windows desktop and web-based applications",
+          "Assisting project manager in defining detailed specifications for specific functionality requirements as well as analyzing, designing, and encoding new systems using C# language",
+          "Preparing accurate reports to document design flaws and bugs as well as modifying existing software or system to correct errors and improve performance",
+          "Collaborating with other programmers and developers in the whole development process, and using structured analysis and design to determine steps to develop programs",
+          "Determining user requirements, including project budgets and timelines as well as providing consultative services to clients and project team members on technical issues",
+          "Mentoring and assisting with training of new and junior programmers as well as doing code reviews for other team members to ensure highest possible quality in software products",
+          "Researching and evaluating new development tools and software products to increase programming capabilities as well as creating written developers guides, and training users in system operations",
+        ]
+      }
+
+      const Person = {
+        title: "Person",
+        source: [
+          "2+ years of progressive experience in Information Technology Industry, Extensive experience in Web Based Applications, Service Oriented Applications",
+          "Workflow & Documents Based Applications,Intranet Portal and System Integration & Automation using C#, Entity Framework, WCF, XML, XSD, XSLT, Java Script",
+          "NUnit, SQL Server."
+        ]
+      }
+
+      //Func
+      //Icon
+      function Email(link, text) {
+        return (
+          <a href={link}>
+            <br />
+            <div className="email_icon" />
+          </a>
+        )
+      }
+      function Planet(link, text) {
+        return (
+          <a href={link}>
+            <div className="globe-container">
+              <div className="globe">
+                <div className="globe-sphere"></div>
+                <div className="globe-outer-shadow"></div>
+                <div className="globe-worldmap">
+                  <div className="globe-worldmap-back"></div>
+                  <div className="globe-worldmap-front"></div>
+                </div>
+                <div className="globe-inner-shadow"></div>
+              </div>
+            </div>
+          </a>
+        )
+      }
+      function Phone(link, text) {
+        return (
+          <a href={link} >
+            <div id="container">
+              <div className="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" className="phone-icon phone-icon--state-connecting" viewBox="0 0 24 24">
+                  <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        )
+      }
+    </script>
+
+
+    <script type="text/babel">
+
+      const Contact = () => {
+        return (
+          <div className="contact">
+            <h3 className="left">Contact</h3>
+            <ContactNode source={phone} />
+            <ContactNode source={email} />
+            <ContactNode source={address} />
+          </div >
+        );
+      }
+      const ContactNode = ({ source: { name, icon, link, text } }) => {
+        return (
+          <div className="contact-node">
+            <h4>{name}</h4>
+            {icon(link, text)}
+          </div>
+        );
+      }
+
+      const Language = () => {
+        return (
+          <div>
+            <h3 className="left">Language</h3>
+            <LanguageNode source={russian} />
+            <LanguageNode source={english} />
+          </div>
+        );
+      }
+      const LanguageNode = ({ source: { name, count } }) => {
+        const maxRating = 5;
+        return (
+          <div>
+            <h4>{name}</h4>
+            <div className="rating">
+              {(() => {
+                const rating = [];
+                for (let i = 0; i < maxRating; i++) {
+                  rating.push(
+                    <span key={i} className={i < count ? "active" : ""} ></span>
+                  );
+                }
+                return rating;
+              })()}
+            </div>
+          </div >
+        );
+      };
+
+      const LeftColumn = () => {
+        return (
+          <div className="left-column">
+            <div>
+              <img className="photo" src="./photo.jpg"></img>
+            </div>
+            <Contact />
+            <br />
+            <h3 className="left">Education</h3>
+            <div>Higher education:<br /> Customs</div>
+            <div>Information Technology</div>
+            <br />
+            <Language />
+          </div>
+        );
+      }
+
+      const Info = ({ source: { title, source } }) => {
+        return (
+          <div>
+            <h3>{title}</h3>
+            <div>
+              {source.map((text) => {
+                return <p>{text}</p>
+              })}
+            </div>
+          </div>
+        );
+      }
+
+      const RightColumn = () => {
+        return (
+          <div className="right-column">
+            <h1 className="r-c__name">Станислав Козлов</h1>
+            <div>
+              <p>C# Developer</p>
+            </div>
+            <Info source={Person} />
+            <Info source={Skills} />
+            <Info source={Experience} />
+          </div>);
+      }
+
+      ReactDOM.render(
+        <div className="wrapper">
+          <div className="main">
+            <LeftColumn />
+            <RightColumn />
+          </div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+          <div className="wrapper-div"><span className="dot"></span></div>
+        </div>,
+        document.getElementById('root')
+      );
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+$main-font: "WWork Sans", sans-serif;
+$secondary-font: "Space Mono", monospace;
+$accent-color: #a254ff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 20px;
+  gap: 12px;
+  color: white;
+  border: 1px solid $accent-color;
+
+  &.fill {
+    background-color: $accent-color;
+  }
+}
+
+header {
+  padding: 20px 50px;
+}

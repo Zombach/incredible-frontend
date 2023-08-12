@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 20px;
+  gap: 12px;
+  color: white;
+  border: 1px solid #a254ff;
+}
+.btn.fill {
+  background-color: #a254ff;
+}
+
+header {
+  padding: 20px 50px;
+}/*# sourceMappingURL=main.css.map */

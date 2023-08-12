@@ -1,0 +1,33 @@
+.email_icon {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  border-top: 20px solid white;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  background-color: orange;
+  transition: 0.3s;
+  padding: 0px;
+  margin: 0 auto;
+}
+.email_icon:before {
+  content: "";
+  border-top: 20px solid orange;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  margin-left: -21px;
+  transition: 0.1s;
+}
+
+.email_icon:hover {
+  background-color: orange;
+}
+
+.email_icon:hover:before {
+  border-bottom: 0px solid orange;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 0px;
+  transition: 0.1s;
+  margin-left: -20px;
+}

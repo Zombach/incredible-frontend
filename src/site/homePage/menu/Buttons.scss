@@ -1,0 +1,32 @@
+.buttons {
+    margin-left: 30.03px;
+    display: inline-flex;
+    align-items: flex-start;
+    width: 200px;
+    height: 57.33px;
+    gap: 8.086px;
+
+
+    .primary {
+        display: flex;
+        align-items: flex-start;
+        gap: 10.108px;
+        border-radius: 16.2px;
+        background: #141416;
+        padding: 16px 24px;
+
+        .text {
+            width: 151px;
+            height: 25px;
+            color: #FFF;
+            white-space: nowrap;
+            font-family: Inter;
+            font-size: 16.17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24.26px;
+            /* 150% */
+            text-transform: uppercase;
+        }
+    }
+}

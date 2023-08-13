@@ -6,10 +6,10 @@ import { CREATORS, DISCOVER, SELL, STATS } from "../TextContent";
 export default function Nav() {
     return (
         <p className="nav">
-            <Text text={DISCOVER} />
-            <Text text={CREATORS} />
-            <Text text={SELL} />
-            <Text text={STATS} />
+            <Text className="text item-1" text={DISCOVER} />
+            <Text className="text item-2" text={CREATORS} />
+            <Text className="text item-3" text={SELL} />
+            <Text className="text item-4" text={STATS} />
         </p>
     );
 }

@@ -1,7 +1,10 @@
 import React from "react";
 import "./HeroButtons.scss";
 import Button from "../components/Button";
-import { CREATE_NFT, EXPLORE_MORE } from "../TextContent";
+import {
+    HERO_BUTTONS_CREATE_NFT,
+    HERO_BUTTONS_EXPLORE_MORE,
+} from "../TextContent";
 import { ReactComponent as rectangle30b } from "../../resources/heroText/Rectangle30b.svg";
 import { ReactComponent as rectangle30w } from "../../resources/heroText/Rectangle30w.svg";
 
@@ -11,7 +14,7 @@ export default function HeroButtons(): JSX.Element {
             <Button
                 className="button black"
                 textClassName="text black"
-                text={EXPLORE_MORE}
+                text={HERO_BUTTONS_EXPLORE_MORE}
                 sourceClassName="background black"
                 source={rectangle30b}
                 Func={F}></Button>
@@ -19,7 +22,7 @@ export default function HeroButtons(): JSX.Element {
             <Button
                 className="button white"
                 textClassName="text white"
-                text={CREATE_NFT}
+                text={HERO_BUTTONS_CREATE_NFT}
                 sourceClassName="background white"
                 source={rectangle30w}
                 Func={F1}></Button>

@@ -2,29 +2,23 @@ import React from "react";
 import "./Content.scss";
 import Text from "../Text";
 import {
-    HERO_TEXT_CONTENT_01_1,
-    HERO_TEXT_CONTENT_01_2,
-    HERO_TEXT_CONTENT_01_3,
-    HERO_TEXT_CONTENT_02,
+    CONTENT_01_1,
+    CONTENT_01_2,
+    CONTENT_01_3,
+    CONTENT_02,
 } from "../TextContent";
+import { ReactComponent as over } from "../../resources/heroText/Over.svg";
+import Svg from "../components/Svg";
 
 export default function Content(): JSX.Element {
     return (
         <div className="content">
-            <Text className="text item-02" text={HERO_TEXT_CONTENT_02} />
+            <Svg className="over" Source={over} />
+            <Text className="text item-02" text={CONTENT_02} />
             <div className="text-box">
-                <Text
-                    className="text item-01 part-01"
-                    text={HERO_TEXT_CONTENT_01_1}
-                />
-                <Text
-                    className="text item-01 part-02"
-                    text={HERO_TEXT_CONTENT_01_2}
-                />
-                <Text
-                    className="text item-01 part-03"
-                    text={HERO_TEXT_CONTENT_01_3}
-                />
+                <Text className="text item-01 part-01" text={CONTENT_01_1} />
+                <Text className="text item-01 part-02" text={CONTENT_01_2} />
+                <Text className="text item-01 part-03" text={CONTENT_01_3} />
             </div>
         </div>
     );

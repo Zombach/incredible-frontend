@@ -1,0 +1,80 @@
+.features {
+    width: 452.964px;
+    height: 70.922px;
+    flex-shrink: 0;
+    margin-top: 82px;
+    margin-left: 97px;
+
+    .items {
+        display: inline-flex;
+        width: 452.964px;
+        height: 70.922px;
+        flex-shrink: 0;
+
+        .item_default {
+            display: inline-flex;
+            flex-direction: column;
+            width: 118px;
+            height: 70.922px;
+            flex-shrink: 0;
+            text-align: center;
+            font-style: normal;
+        }
+
+        .item_01 {
+
+            &.part_01 {
+                color: #141416;
+                font-family: Public Sans;
+                font-size: 36.771px;
+                font-weight: 600;
+                line-height: 45.964px;
+                /* 125% */
+            }
+
+            &.part_02 {
+                color: #848586;
+                font-family: Inter;
+                font-size: 12.257px;
+                font-weight: 500;
+                line-height: 18.386px;
+            }
+        }
+
+        .item_02 {
+            &.part_01 {
+                color: #141416;
+                font-family: Public Sans;
+                font-size: 36.771px;
+                font-weight: 600;
+                line-height: 45.964px;
+            }
+
+            &.part_02 {
+                color: #848586;
+                font-family: Inter;
+                font-size: 12.257px;
+                font-weight: 500;
+                line-height: 18.386px;
+            }
+        }
+
+        .item_03 {
+            &.part_01 {
+                color: #141416;
+                font-family: Public Sans;
+                font-size: 36.771px;
+                font-weight: 600;
+                line-height: 45.964px;
+            }
+
+            &.part_02 {
+                color: #848586;
+                font-family: Inter;
+                font-size: 12.257px;
+                font-weight: 500;
+                line-height: 18.386px;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import HomePage from "./site/HomePage";
+import HomePage from "./site/pages/HomePage/HomePage";
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement,

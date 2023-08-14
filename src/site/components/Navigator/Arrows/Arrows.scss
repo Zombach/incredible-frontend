@@ -1,0 +1,28 @@
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34.494px;
+
+    .arrow {
+        width: 25.87px;
+        height: 25.87px;
+        background: none;
+
+        &.left {
+            color: #929292;
+        }
+
+        &.right {
+            color: #23262F;
+        }
+    }
+
+    .sep {
+        //margin-left: 34.49px;
+        width: 2.156px;
+        height: 25.87px;
+        border-radius: 2.156px;
+        background: var(--neutrals-6, #E6E8EC);
+    }
+}

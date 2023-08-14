@@ -1,0 +1,16 @@
+.item {
+    width: 391px;
+    height: 418.501px;
+    flex-shrink: 0;
+    border-radius: 25px;
+
+    &.part_01 {
+        height: 394.587px;
+    }
+
+    &.part_02 {
+        border-radius: 11.957px;
+        filter: blur(41.85015106201172px);
+        height: 394.587px;
+    }
+}

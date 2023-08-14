@@ -1,6 +1,6 @@
 import React from "react";
 import "./Wallet.scss";
 
-export default function Wallet() {
-    return <div>Wallet</div>;
+export default function Wallet(): JSX.Element {
+    return <div></div>;
 }

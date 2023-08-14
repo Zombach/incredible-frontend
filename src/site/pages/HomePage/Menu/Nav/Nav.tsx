@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.scss";
-import Text from "../../../../components/Button/Text/Text";
+import Text from "@Text";
 import {
     NAV_ITEM_01,
     NAV_ITEM_02,

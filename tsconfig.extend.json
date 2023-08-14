@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@components/*": ["./site/components/*"],
+            "@Button": ["./site/components/Button/Button"],
+            "@Text": ["./site/components/Button/Text/Text"],
+            "@Svg": ["./site/components/Button/Svg/Svg"],
+            "@pages/*": ["./site/pages/*"],
+            "@resources/*": ["./site/resources/*"]
+        }
+    }
+}

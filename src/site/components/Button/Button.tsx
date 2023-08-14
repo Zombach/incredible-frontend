@@ -1,7 +1,7 @@
 import React, { FunctionComponent, SVGProps } from "react";
 import "./Button.scss";
-import Text from "./Text/Text";
-import Svg from "./Svg/Svg";
+import Text from "@Text";
+import Svg from "@Svg";
 
 interface IButton {
     className?: string | undefined;

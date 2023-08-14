@@ -1,6 +1,6 @@
 import React from "react";
 import "./Content.scss";
-import Text from "../../../../components/Button/Text/Text";
+import Text from "@Text";
 import {
     CONTENT_01_1,
     CONTENT_01_2,
@@ -8,7 +8,7 @@ import {
     CONTENT_02,
 } from "./assets/Constants";
 import { ReactComponent as over } from "./assets/Over.svg";
-import Svg from "../../../../components/Button/Svg/Svg";
+import Svg from "@Svg";
 
 export default function Content(): JSX.Element {
     return (

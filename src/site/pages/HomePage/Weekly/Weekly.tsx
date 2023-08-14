@@ -1,6 +1,6 @@
 import React from "react";
 import "./Weekly.scss";
 
-export default function Weekly() {
-    return <div>Weekly</div>;
+export default function Weekly(): JSX.Element {
+    return <div></div>;
 }

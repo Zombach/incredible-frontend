@@ -1,6 +1,6 @@
 import React from "react";
 import "./Items.scss";
-import Text from "../../../../components/Button/Text/Text";
+import Text from "@Text";
 
 interface IItem {
     className?: string | undefined;

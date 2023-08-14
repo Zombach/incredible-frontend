@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroButtons.scss";
-import Button from "../../../../components/Button/Button";
+import Button from "@components/Button/Button";
 import {
     HERO_BUTTONS_CREATE_NFT,
     HERO_BUTTONS_EXPLORE_MORE,

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Item.scss";
-import Svg from "../../../../components/Button/Svg/Svg";
+import Svg from "@Svg";
 import { ReactComponent as item_01 } from "./assets/Item_01.svg";
 import { ReactComponent as item_02 } from "./assets/Item_02.svg";
 
